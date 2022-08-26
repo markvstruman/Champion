@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Welcome to AIDA</title>
+    <link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+    <div class="container"></div>
+    <div id="box">
+        <h1>Welcome to AIDA</h1>
+        <h3>Please select an autoimmune disease</h3>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="form-group">
+            <label for="Disease">Disease:</label>
+            Disease:
+            <select formControlName="disease" class="form-control" (change)="changeWebsite($event)">
+                <option value="">
+                <option value="achalasia">Achalasia
+            </select>
+            <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
