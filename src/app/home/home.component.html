@@ -4,22 +4,31 @@
     <title>Welcome to AIDA</title>
     <link rel="stylesheet" href="home.component.css">
 </head>
-<body>
-    <div class="container"></div>
+<body class="container">
     <div id="box">
         <h1>Welcome to AIDA</h1>
         <h3>Please select an autoimmune disease</h3>
         <form [formGroup]="form" (ngSubmit)="submit()">
             <div class="form-group">
             <label for="Disease">Disease:</label>
-            Disease:
             <select formControlName="disease" class="form-control" (change)="changeWebsite($event)">
                 <option value="">
                 <option value="achalasia">Achalasia
+                <option value="">Type 1 Diabetes
+                <option value="">Rheumatoid Arthritis
+                <option value="">Systemic Lupus
+                <option value="">Erythematosus
+                <option value="">Inflammatory Bowel Disease
             </select>
             <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
-        </div>
+            </div>
         </form>
     </div>
+
+    <footer>
+        <p>
+            <a>About Us</a>     &copy; Copyright 2022, All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>

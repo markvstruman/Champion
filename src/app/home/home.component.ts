@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     this.page=e.target.value;
   }
 
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
