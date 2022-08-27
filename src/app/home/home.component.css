@@ -34,3 +34,16 @@ h1, h3 {
     padding: 0;
     margin: 0;
 }
+
+footer {
+    border-top: solid 1px;
+    background: rgba(94, 94, 94, 0.5);
+    width: 100%;
+    height: fit-content;
+    padding-top: 0;
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+    text-align: center;
+    color: black;
+}
