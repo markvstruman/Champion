@@ -1,0 +1,41 @@
+body {
+    border: 0;
+    margin: -8px -8px -8px -8px;
+    padding: 0;
+    height: 100vh;
+    background: url("../../assets/achBack.jpg") no-repeat 0 0 fixed;
+    -webkit-background-size: cover;
+    background-attachment:fixed;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#box {
+    padding: 20px;
+    position:absolute;
+    text-align:center;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 5px;
+    margin:auto;
+}
+
+h1, h3 {
+    padding: 0;
+    margin: 0;
+    color:azure;
+}
+
+#title {
+    text-align:center;
+    left:50%;
+    top:10%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+}
+
+#information {
+    
+}
